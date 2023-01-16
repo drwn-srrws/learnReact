@@ -1,0 +1,18 @@
+.PageTitle {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+}
+.PageTitleFirst {
+  color: #4ea8de;
+}
+.PageTitleSecond {
+  color: #5e60ce;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

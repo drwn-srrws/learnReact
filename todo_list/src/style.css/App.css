@@ -1,0 +1,39 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.post {
+  display: flex;
+  padding: 12px;
+  border: 1px solid #333333;
+  margin-top: 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+.header {
+  background: #0d0d0d;
+  height: 200px;
+  display: flex;
+  align-items: center;
+}
+.container {
+  max-width: 900px;
+  width: 100%;
+}
+.header,
+.content {
+  display: flex;
+  justify-content: center;
+}
+.displayFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

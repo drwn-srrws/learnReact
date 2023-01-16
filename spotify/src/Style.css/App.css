@@ -1,0 +1,17 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+}
+
+.Wrapper {
+  display: flex;
+}
+
+.MainMenu {
+  width: 600px;
+}
