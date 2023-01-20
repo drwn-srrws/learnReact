@@ -11,15 +11,19 @@ import {
   IconButton,
   Tooltip,
 } from "@mui/material";
+import { useAppDispatch, useAppSelector } from "../hooks/redux";
 
 interface PostItemProps {
   post: IPost;
   remove: (post: IPost) => void;
 }
 const TodoListItem: FC<PostItemProps> = ({ post, remove }) => {
+  const dispatch = useAppDispatch();
+  const {} = useAppSelector((state) => state.PostReducer);
   return (
     <ListItem
       alignItems="flex-start"
+      sx={{ width: 400 }}
       secondaryAction={
         <Tooltip title="Delete">
           <IconButton

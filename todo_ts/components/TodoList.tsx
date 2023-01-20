@@ -9,8 +9,12 @@ const TodoList = () => {
     { id: 1, title: "123", subtitle: "123", date: "123", iscompleted: true },
     { id: 2, title: "123", subtitle: "123", date: "123", iscompleted: true },
   ]);
+  const [basket, setBasket] = useState<IPost[]>([
+
+  ])
   const remove = (post:IPost) => {
-    setPosts(posts.filter(p=>p.id!=post.id))
+    setPosts(posts.filter(p => p.id != post.id));
+    setBasket(posts.filter(p => p.id == post.id))
   }
   return (
     <List
