@@ -3,7 +3,6 @@ export interface IPost {
   title: string;
   subtitle: string;
   date: string;
-  iscompleted: boolean;
+  isCompleted: boolean;
   selected: boolean;
 }
-

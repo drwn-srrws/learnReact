@@ -13,7 +13,7 @@ const initialState: PostState = {
   posts: [
     {
       id: 1,
-      iscompleted: false,
+      isCompleted: false,
       date: "2",
       subtitle: "2",
       title: "3",
@@ -30,7 +30,7 @@ export const PostSlice = createSlice({
     addPosts(state, action: PayloadAction<AddPostType>) {
       state.posts.push({
         id: Date.now(),
-        iscompleted: false,
+        isCompleted: false,
         date: Date.now().toLocaleString(),
         subtitle: action.payload.title,
         title: action.payload.text,
@@ -40,7 +40,7 @@ export const PostSlice = createSlice({
     selectPost(state, action: PayloadAction<IPost>) {
       state.basket = state.basket.map((post) =>
         post.id === action.payload.id
-          ? { ...post, iscompleted: !post.iscompleted }
+          ? { ...post, isCompleted: !post.isCompleted }
           : post
       );
     },
@@ -63,5 +63,10 @@ export const PostSlice = createSlice({
 });
 
 export default PostSlice.reducer;
-export const { addPosts, removePosts, removeBasketPosts, returnRemovePosts, selectPost } =
-  PostSlice.actions;
+export const {
+  addPosts,
+  removePosts,
+  removeBasketPosts,
+  returnRemovePosts,
+  selectPost,
+} = PostSlice.actions;

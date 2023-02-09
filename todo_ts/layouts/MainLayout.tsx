@@ -1,11 +1,11 @@
 import React, { FC, PropsWithChildren } from "react";
-import NavBar from "../components/NavBar";
+import NavBar from "@/components/Navigation/Navigation";
 
 const MainLayout: FC<PropsWithChildren> = ({ children }) => {
   return (
     <>
       {children}
-      <NavBar></NavBar>
+      <NavBar />
     </>
   );
 };

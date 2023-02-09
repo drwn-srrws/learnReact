@@ -1,20 +1,24 @@
 import React from "react";
-import { useAppSelector } from "../hooks/redux";
-import { IPost } from "../types/types";
-import TemplateList from "./TemplateList";
-import TemplateListItem, { ItemVariant } from "./TemplateListItem";
+
+import { useAppSelector } from "@/hooks/redux";
+import MainLayout from "@/layouts/MainLayout";
+import TemplateListItem from "@/components/List/TemplateListItem";
+import TemplateList from "@/components/List/TemplateList";
+import { ItemVariant } from "@/types/todo";
+import { IPost } from "@/types/types";
+
 const BasketPage = () => {
   const { basket } = useAppSelector((state) => state.PostReducer);
 
   return (
-    <div>
+    <MainLayout>
       <TemplateList
         items={basket}
         renderItems={(post: IPost) => (
           <TemplateListItem post={post} variant={ItemVariant.basket} />
         )}
       ></TemplateList>
-    </div>
+    </MainLayout>
   );
 };
 

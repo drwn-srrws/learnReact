@@ -1,9 +1,6 @@
 import React from "react";
-import BasketPage from "../../components/BasketPage";
-import MainLayout from "../../layouts/MainLayout";
+import BasketPage from "modules/BasketPage/BasketPage";
 
-const index = () => {
-  return <MainLayout><BasketPage/></MainLayout>;
-};
+const index = () => <BasketPage />;
 
 export default index;

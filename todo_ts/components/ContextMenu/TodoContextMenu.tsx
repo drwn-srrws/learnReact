@@ -1,6 +1,5 @@
-import { log } from "console";
 import React, { useEffect } from "react";
-import TodoContextMenuItem from "./TodoContextMenuItem";
+import TodoContextMenuItem from "components/ContextMenu/TodoContextMenuItem";
 
 interface TodoContextMenuProps {
   onClose: () => void;
@@ -12,12 +11,12 @@ const TodoContextMenu = React.forwardRef<
   TodoContextMenuProps
 >(({ onClose }, ref) => {
   useEffect(() => {
-    console.log("123");
     document.addEventListener("mousedown", onClose);
     return () => {
       document.removeEventListener("mousedown", onClose);
     };
   }, [onClose]);
+
   const menuItems = [
     {
       label: "Add to Your Library",

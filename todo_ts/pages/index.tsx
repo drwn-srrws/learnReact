@@ -1,9 +1,8 @@
 import React from "react";
-import MainLayout from "../layouts/MainLayout";
-import MainPage from "./Main/MainPage";
+import MainPage from "../modules/MainPage/MainPage";
 
 const index = () => {
-  return <MainPage/>;
+  return <MainPage />;
 };
 
 export default index;
