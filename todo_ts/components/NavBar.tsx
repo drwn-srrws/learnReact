@@ -13,7 +13,7 @@ export default function LabelBottomNavigation() {
 
   const handleChange = (event: React.SyntheticEvent, newValue: string) => {
     setValue(router.pathname);
-    console.log(router.pathname); //yields: "/js" (where snippets run)
+    console.log(router.pathname); 
   };
 
   return (

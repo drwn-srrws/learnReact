@@ -1,0 +1,19 @@
+.contextMenuItem {
+  display: inline-flex;
+  text-decoration: none;
+  position: relative;
+  font-size: 12px;
+  line-height: 20px;
+  padding: 4px 30px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  text-shadow: none;
+  background: #383838;
+  transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.contextMenuItem:hover,
+.contextMenuItem:active,
+.contextMenuItem:focus {
+  background: #808080;
+}

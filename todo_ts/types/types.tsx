@@ -4,4 +4,6 @@ export interface IPost {
   subtitle: string;
   date: string;
   iscompleted: boolean;
+  selected: boolean;
 }
+
